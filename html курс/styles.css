@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-color: #f1f1f1; /* фон */
+    color: #0f141e;
+
+    font-size: 16px;  /*маштаб шрифта */
+    font-weight: normal; /* жирный или нормальный шрифт */
+    font-family: 'Roboto', sans-serif;
+    
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; шрифты текста */
+    
+    font-family: 'Roboto', sans-serif; /* импорт с гугл текст на 1 строчке */
+    
+   /* font: normal 16px 'Roboto', sans-serif;  !!! 3 в 1 (строчки 7,8,9) альтернавивно 
+   короче */
+}
+ 
+a {
+    color: black;
+    text-decoration: none;
+
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:visited {
+    color: rgb(5, 139, 0);
+}
+
+a:active {
+    color: darkblue;
+}
+
+.bg-yellow {
+    background: #fff9dc;
+}
+
+.bg-green {
+    background: #e5ffe7;
+}
+
+.bg-red {
+    background: #ffe5e5;
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+@media (max-width: 700px) {.info
+    {
+        text-align: center;
+        display: block;
+    } 
+
+}
+
+.info-text {
+    margin-left: 40px;
+
+}
+
+.info-text h4 {
+ margin-bottom: 10px;
+}
+
+.hobota {
+    padding: 0 20px ;
+    list-style: none;
+}
+
+.hobota li {
+    color:black;
+    margin-bottom: 10px;
+}
+
+
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 200px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+               
+.info p {   /*добавили р тк работа с целым параграфом */
+    color: #86898f;
+    margin: 0;    /*убрал пустоту между строчками я хочу... и пока от хоботни*/ 
+    font-style: italic; /*наклон строки */
+    /*font-weight: bold; выделяет весь текст жирным */
+    text-decoration: none;
+    /* text-transform: uppercase; весь текст крутный или малентький или каджое 
+    слово с большой буквы*/ 
+     
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 30px;
+
+}
+
+/*
+.seti  {
+          /*word-spacing: 42px; расстояние между словами 
+    background: green;
+    
+              /*расстояние в блоке текста от границ 
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 25;
+    padding-left: 30;
+    border: 5px solid red;
+    border-bottom: dotted;
+    border-right-color: blue ;
+    margin: 5px;
+}
+*/
+
+/*
+             галочка создает иерархию для вложенных div которые на одном уровне 
+.box-model > div {
+    background: black;
+    float: left;
+    height: 200px;
+    width: 25%;
+                     параметры 4 эллементов
+    border: 4px solid red;
+                    /* данная функфия позволяет уместит в один ряд даже если по параметрам не проходим по размеру 
+    box-sizing:border-box;
+
+*/
+
+.table {
+ width: 100%;
+ }
+
+ .table td {
+     padding-bottom: 10px;   
+ }
+                            /*работа со 2 и 3 столбцом таблицы одновременно */
+ .table td:nth-child(2), 
+ .table td:nth-child(3) {
+     color: #86898f
+ }
+                            /*работа со СТРОКАМИ в таблице */
+/* .table tr:nth-child(odd) {
+     background: red;
+ }*/
+
+ .youtube li {
+     margin-bottom: 10px;
+     padding-bottom: 5px;
+     border-bottom: 1px solid #ccc;
+}
+
+.youtube {
+    list-style: none;
+    padding: 0;
+}
+
+.contact  h2 {
+    text-align: center;   
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #86898f;
+}
+
+.form-group input,
+.form-group  textarea
+    {
+   width: 100%;
+   box-sizing: border-box;
+   border: none;
+   background: transparent;
+   border-bottom: 1px solid #ccc;
+   color: #000;
+   padding: 15px 0 10px;
+   outline: none;
+   font-family: inherit;
+    
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20 px;    
+}
+
+.row > .form-group {
+    width: 50%;
+    margin-right: 20 px;
+}
+
+.btn {
+    background:#111 ;
+    padding: 15px 20px;
+    color: white;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
